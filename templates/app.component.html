@@ -1,0 +1,14 @@
+<div class="quote-container clearfix">
+  <div class="quote-area" *ngIf="random.selectedQuote" [style.color]="random.selectedColor">
+    <h2 class="quote"
+        (@hideShow.start)="animationStarted($event)"
+        (@hideShow.done)="animationDone($event)"
+        [@hideShow]="show">{{random.selectedQuote.quote}}</h2>
+    <p class="author"
+       (@hideShow.start)="animationStarted($event)"
+       (@hideShow.done)="animationDone($event)"
+       [@hideShow]="show">- {{random.selectedQuote.author}}</p>
+  </div>
+  <button (click)="random.onClick()" [style.background-color]="random.selectedColor" class="new-quote">New quote</button>
+</div>
+<p class="name" [style.color]="random.selectedColor">by Chelsea Casareale</p>

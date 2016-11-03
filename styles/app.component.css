@@ -1,0 +1,45 @@
+.name {
+  text-align: center;
+  font-size: 0.9em;
+}
+
+.quote-container {
+  background-color: #fff;
+  margin: 140px auto 2em;
+  padding: 2em 0 4em;
+  max-width: 36%;
+  border-radius: 4px;
+}
+
+.new-quote {
+  border-radius: 6px;
+  color: #fff;
+  padding: 1em 1.4em;
+  float: right;
+  margin-right: 4em;
+  border: none;
+}
+
+button:hover,
+button:active,
+button:focus {
+  color: #fff;
+  outline: none;
+}
+
+.quote-area {
+  text-align: center;
+  margin: 3em 3em 0;
+  padding-bottom: 2em;
+}
+
+.author {
+  margin-top: .5em;
+}
+
+
+.clearfix {
+  content: "";
+  display: block;
+  clear: both;
+}
